@@ -3,7 +3,7 @@ provider "aws" {
   profile = "${var.aws-profile}"
 }
 
-resource "aws_instance" "instance" {
+resource "aws_instance" "TERRAGRUNT1" {
   ami                         = "${var.instance-ami}"
   instance_type               = "${var.instance-type}"
  
