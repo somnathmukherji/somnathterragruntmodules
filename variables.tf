@@ -432,3 +432,9 @@ variable "associate_public_ip_address" {
   type        = bool
   default     = null
 }
+
+variable "ami" {
+  description = "ID of AMI to use for the instance"
+  type        = string
+  default     = null
+}
