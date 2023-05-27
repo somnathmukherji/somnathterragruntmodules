@@ -1,6 +1,6 @@
 variable "aws-region" {
   description = "The AWS region"
-  type        = "string"
+  type        = "ap-south-1"
 }
 
 variable "aws-profile" {
