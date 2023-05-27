@@ -402,3 +402,28 @@ variable "iam_role_tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "ig-tag-name" {
+  description = "ig-tag-name"
+  type        = string
+  default     = null
+}
+
+variable "subnet-cidr-block" {
+  description = "subnet-cidr-block"
+  type        = string
+  default     = null
+}
+
+variable "subnet-tag-name" {
+  description = "subnet-tag-name"
+  type        = string
+  default     = null
+}
+
+variable "sg-tag-name" {
+  description = "sg-tag-name"
+  type        = string
+  default     = null
+}
+
