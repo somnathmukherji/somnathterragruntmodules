@@ -11,13 +11,13 @@ variable "aws-profile" {
 variable "instance-ami" {
   description = "The AMI (Amazon Machine Image) that identifies the instance"
   type        = "string"
-  default     = ami-081a91961c85e3640
+  default     = "ami-081a91961c85e3640"
 }
 
 variable "instance-type" {
   description = "The instance type to be used"
   type        = "string"
-  default     = t2.micro
+  default     = "t2.micro"
 }
 
 variable "instance-key-name" {
