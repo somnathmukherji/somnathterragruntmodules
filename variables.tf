@@ -355,6 +355,18 @@ variable "iam_role_name" {
   default     = null
 }
 
+variable "vpc-cidr-block" {
+  description = "Name to use on IAM role created"
+  type        = string
+  default     = null
+}
+
+variable "vpc-tag-name" {
+  description = "Name to use on IAM role created"
+  type        = string
+  default     = null
+}
+
 variable "iam_role_use_name_prefix" {
   description = "Determines whether the IAM role name (`iam_role_name` or `name`) is used as a prefix"
   type        = bool
