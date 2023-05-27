@@ -7,8 +7,8 @@ resource "aws_instance" "TERRAGRUNT1" {
   ami                         = "${var.instance-ami}"
   instance_type               = "${var.instance_type}"
  
-  iam_instance_profile        = "${var.iam-role-name != "" ? var.iam-role-name : ""}"
-  key_name                    = "${var.instance-key-name != "" ? var.instance-key-name : ""}"
+  #iam_instance_profile        = "${var.iam-role-name != "" ? var.iam-role-name : ""}"
+  #key_name                    = "${var.instance-key-name != "" ? var.instance-key-name : ""}"
   associate_public_ip_address = "${var.instance-associate-public-ip}"
   # user_data                   = "${file("${var.user-data-script}")}"
   user_data                   = "${var.user-data-script != "" ? file("${var.user-data-script}") : ""}"
