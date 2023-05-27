@@ -427,20 +427,3 @@ variable "sg-tag-name" {
   default     = null
 }
 
-variable "associate_public_ip_address" {
-  description = "Whether to associate a public IP address with an instance in a VPC"
-  type        = bool
-  default     = null
-}
-
-variable "ami" {
-  description = "ID of AMI to use for the instance"
-  type        = string
-  default     = null
-}
-
-variable "tags" {
-  description = "A mapping of tags to assign to the resource"
-  type        = map(string)
-  default     = {}
-}
