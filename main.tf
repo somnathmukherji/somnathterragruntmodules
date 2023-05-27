@@ -15,9 +15,9 @@ resource "aws_instance" "TERRAGRUNT1" {
   vpc_security_group_ids      = ["${aws_security_group.sg.id}"]
   subnet_id                   = "${aws_subnet.subnet.id}"
 
-  tags = {
-    Name = "${var.tags}"
-  }
+ # tags = {
+ #   Name = "${var.tags}"
+ # }
 }
 
 resource "aws_vpc" "vpc" {
