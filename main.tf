@@ -1,7 +1,7 @@
-provider "aws" {
-  region  = "${var.aws-region}"
-  profile = "${var.aws-profile}"
-}
+#provider "aws" {
+#  region  = "${var.aws-region}"
+ # profile = "${var.aws-profile}"
+#}
 
 resource "aws_instance" "TERRAGRUNT1" {
   ami                         = "${var.instance-ami}"
