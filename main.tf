@@ -16,7 +16,7 @@ resource "aws_instance" "TERRAGRUNT1" {
   subnet_id                   = "${aws_subnet.subnet.id}"
 
   tags = {
-    "Name" = "var.tags"
+    Name = "${var.tags}"
   }
 }
 
