@@ -5,7 +5,7 @@
 
 resource "aws_instance" "TERRAGRUNT1" {
   ami                         = "${var.instance-ami}"
-  instance_type               = "${var.instance-type}"
+  instance_type               = "${var.instance_type}"
  
   iam_instance_profile        = "${var.iam-role-name != "" ? var.iam-role-name : ""}"
   key_name                    = "${var.instance-key-name != "" ? var.instance-key-name : ""}"
